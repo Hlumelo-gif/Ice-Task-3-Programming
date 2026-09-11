@@ -1,13 +1,12 @@
-# Question 3
-total = 0
+# Question 4
+while True:
+password = input("Enter password: ")
 
-# Get the first number
-num = int(input("Enter a number (0 to stop): "))
-
-# Keep looping until they enter 0
-while num != 0:
-total = total + num
-# Ask for the next number
-num = int(input("Enter a number (0 to stop): "))
-
-print("The total sum is:", total)
+if password == "exit":
+print("Exiting program...")
+break
+elif password == "PROGisFUN":
+print("Login successful!")
+break
+else:
+print("Incorrect password. Try again.")
